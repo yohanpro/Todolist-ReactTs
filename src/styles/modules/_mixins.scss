@@ -1,0 +1,35 @@
+@mixin reset-margins {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// 브라우저 주소창 크기를 포함해서 적용하고 싶을 때 사용
+
+@mixin calcHeight($vh) {
+  height: calc(var(--vh, 1vh) * $vh);
+}
+
+@mixin calcMargin($mt: unset, $mr: unset, $mb: unset, $ml: unset) {
+  margin: calc(var(--vh, 1vh) * $vh);
+}
+
+@mixin clearposition {
+  position: inherit;
+  bottom: inherit;
+  top: inherit;
+  left: inherit;
+  right: inherit;
+  transform: inherit;
+}

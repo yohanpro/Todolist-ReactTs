@@ -1,0 +1,71 @@
+// Font Type
+// $header_l: 'GenesisSansHead-Light', Arial, sans-serif;
+// $header_R: 'GenesisSansHead-Regular', Arial, sans-serif;
+
+$base_ff: 'NotoSans-Medium', Arial, sans-serif;
+$base_b1_ff: 'NotoSans-Bold', Arial, sans-serif;
+$base_b2_ff: 'NotoSans-Black', Arial, sans-serif;
+
+$base2_ff: 'sandol_nemoni', Arial, sans-serif;
+
+// Font Size
+$small-fz: 13px;
+$base-fz: 16px;
+$base-fz2: 18px;
+$base-fz3: 20px;
+$big-fz: 30px;
+
+// ==========================================================
+// Font type
+// ==========================================================
+
+@font-face {
+  font-family: 'sandol_nemoni';
+  src: url('/static/fonts/sandol_nemoni.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: url('/static/fonts/NotoSans-Medium.woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: url('/static/fonts/NotoSans-Bold.woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Black';
+  src: url('/static/fonts/NotoSans-Black.woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+// ==========================================================
+// Font
+// ==========================================================
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+div,
+p,
+span,
+input,
+a,
+li {
+  font-family: $base_ff;
+  font-size: $base-fz;
+  word-break: break-word;
+}

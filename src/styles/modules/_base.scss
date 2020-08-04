@@ -1,0 +1,129 @@
+html,
+body {
+  @include reset-margins;
+  font-size: $small-fz;
+  position: relative;
+
+  @include mq("phone") {
+    font-size: $base-fz;
+  }
+
+  @include mq("phone-wide") {
+    font-size: $base-fz2;
+    overflow-x: hidden;
+  }
+
+  @include mq("tablet") {
+    max-width: 100%;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: $black;
+}
+
+p,
+ul {
+  @include reset-margins;
+}
+
+li {
+  list-style: none;
+}
+
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: $base2_ff;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    font-family: $base2_ff;
+    color: #cecece;
+    text-align: center;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &:focus {
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus {
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+  display: none;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+img {
+  width: 100%;
+}
