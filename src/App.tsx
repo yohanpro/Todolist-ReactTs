@@ -1,15 +1,9 @@
 import React from "react";
-import {
-  Switch,
-  Router,
-  Route,
-  BrowserRouter,
-  RouteComponentProps,
-  withRouter,
-} from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import "./styles/index.scss";
 
 import Login from "src/pages/login";
+import Home from "src/pages/home";
 
 function App() {
   return (
@@ -17,6 +11,9 @@ function App() {
       <BrowserRouter>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/home">
+          <Home />
         </Route>
       </BrowserRouter>
     </div>

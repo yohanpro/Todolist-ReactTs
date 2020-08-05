@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 6vh;
+  background-color: #607d8b;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  color: $white;
+  font-size: 1rem;
+
+  & > .div,
+  & > h3 {
+    align-items: center;
+    position: relative;
+    display: flex;
+    font-size: 1.2rem;
+  }
+  & > .login {
+    padding-right: 1rem;
+  }
+}
