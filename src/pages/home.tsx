@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import Header from "src/components/header";
+import AddTask from "src/components/AddTask";
 
-const Home = () => {
+const Home: React.FC = () => {
   const [isLogin, setIsLogin] = useState(false);
 
   return (
-    <div className="login-container">
+    <div className="home">
       <Header isLogin={isLogin} />
-      <main></main>
+      <main>
+        <AddTask />
+      </main>
     </div>
   );
 };

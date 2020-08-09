@@ -1,5 +1,13 @@
-main {
-  height: calc(100%-6vh);
+.home {
   width: 100%;
-  margin-top: 6vh;
+  height: 100%;
+  display: flex;
+  position: relative;
+
+  & > main {
+    height: calc(100% - 6vh);
+    width: 100%;
+    margin-top: 6vh;
+    padding: 0 1.5rem;
+  }
 }
