@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
-import "./styles/index.scss";
-
 import Login from "src/pages/login";
 import Home from "src/pages/home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/index.scss";
 
 function App() {
   return (
