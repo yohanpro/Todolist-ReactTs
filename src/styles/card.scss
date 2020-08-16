@@ -1,0 +1,17 @@
+.container__addTask {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #607d8b;
+
+  & > .row span {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-top: 1em;
+    flex-grow: 0;
+    flex-basis: 100%;
+    max-width: 600px;
+  }
+}
