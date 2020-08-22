@@ -3,18 +3,29 @@ import { Card, CardBody } from "reactstrap";
 import { AiFillEdit } from "react-icons/ai";
 import { BsTrash } from "react-icons/bs";
 
-const ListCard: React.FC = () => {
+interface CardProps {
+  id: number;
+  title: string;
+  completed: boolean;
+  userId: number;
+}
+
+const ListCard: React.FC<CardProps> = (props: CardProps) => {
+  const { id, title, completed, userId } = props;
+
   return (
     <Card>
       <CardBody>
         <div className="list__main">
           <div className="list-task">
             <div>Task</div>
-            <span className="list-task__subTitle">dkfjdkf</span>
+            <span className="list-task__subTitle">{title}</span>
           </div>
           <div className="list-due mt-4">
-            <div>due</div>
-            <span className="list-task__dueDate">2020.8.17</span>
+            <div>Completed</div>
+            <span className="list-task__dueDate">
+              {completed ? "Yes" : "Not Yet"}
+            </span>
           </div>
         </div>
         <div className="list__iconArea">

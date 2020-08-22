@@ -3,7 +3,7 @@ body {
   width: 100%;
   height: 100%;
   @include reset-margins;
-  font-size: $small-fz;
+  font-size: 10px;
   position: relative;
 
   @include mq("phone") {

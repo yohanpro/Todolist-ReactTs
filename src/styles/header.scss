@@ -4,11 +4,13 @@
   height: 7vh;
   background-color: #607d8b;
   display: flex;
-  flex-shrink: 0;
+
   justify-content: space-between;
   color: $white;
   font-size: 1rem;
   align-items: center;
+  overflow: auto;
+  flex: 1;
 
   & > .title {
     flex: none;

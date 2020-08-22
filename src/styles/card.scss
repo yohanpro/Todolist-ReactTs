@@ -36,7 +36,11 @@
     &__subTitle,
     &__dueDate {
       font-size: 1.3em;
-      color: black;
+    }
+
+    &__dueDate {
+      color: red;
+      font-weight: lighter;
     }
   }
 }

@@ -7,7 +7,9 @@
   & > main {
     height: calc(100% - 6vh);
     width: 100%;
-    margin-top: 6vh;
-    padding: 0 1.5rem;
+    margin-top: 10vh;
+    padding: 0 1.5rem 3rem;
+    flex: 1;
+    overflow: auto;
   }
 }
