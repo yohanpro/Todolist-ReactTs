@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardBody } from "reactstrap";
 import { AiFillEdit } from "react-icons/ai";
 import { BsTrash } from "react-icons/bs";
+import EditModal from "src/components/Modal";
 
 interface CardProps {
   id: number;
@@ -13,10 +14,23 @@ interface CardProps {
 const ListCard: React.FC<CardProps> = (props: CardProps) => {
   const { id, title, completed, userId } = props;
 
+  const [editModal, setEditModal] = useState(false);
+
+  const toggle = (targetModal: string) => {
+    switch (targetModal) {
+      case "Edit":
+        setEditModal(!editModal);
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
     <Card>
       <CardBody>
-        <div className="list__main">
+        <div className="list__main" onClick={() => toggle("Edit")}>
           <div className="list-task">
             <div>Task</div>
             <span className="list-task__subTitle">{title}</span>
@@ -41,6 +55,7 @@ const ListCard: React.FC<CardProps> = (props: CardProps) => {
           />
         </div>
       </CardBody>
+      <EditModal modal={editModal} toggle={toggle} />
     </Card>
   );
 };
