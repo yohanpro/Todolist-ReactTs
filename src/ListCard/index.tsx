@@ -55,7 +55,7 @@ const ListCard: React.FC<CardProps> = (props: CardProps) => {
           />
         </div>
       </CardBody>
-      <EditModal modal={editModal} toggle={toggle} />
+      <EditModal modal={editModal} toggle={toggle} {...props} />
     </Card>
   );
 };
