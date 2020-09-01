@@ -1,0 +1,67 @@
+.modal-content {
+    display: flex;
+    height: 22rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #607d8b;
+
+    &>button:focus {
+        border: unset;
+        padding: .375rem .75rem;
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+//@modal btn
+.btn_modal {
+    display: flex;
+    background: unset;
+    color: #607d8b;
+    border: none;
+
+}
+
+.modal-footer {
+    border: unset;
+}
+
+input,
+textarea,
+button {
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    resize: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+
+.form__completed {
+    display: flex;
+
+    &>div {
+        margin-right: 1rem;
+    }
+}
+
+.form-group {
+    margin-bottom: 2rem;
+
+    &>label {
+        font-size: 1.5rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+    }
+}
+
+.form-check {
+    font-size: 1.1rem;
+}

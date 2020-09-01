@@ -23,24 +23,3 @@ $breakpoints: ('phone-small': 320px,
     }
   }
 }
-
-$breakpoints_2: ('phone-small': 568px,
-  'phone': 640px,
-  'phone-middle': 700px,
-  'phone-s10': 757px,
-  'phone-wide': 780px,
-);
-
-@mixin mqHeight($height, $type: min) {
-  @if map_has_key($breakpoints_2, $height) {
-    $height: map_get($breakpoints_2, $height);
-
-    @if $type==max {
-      $height: $height - 1px;
-    }
-
-    @media only screen and (#{$type}-height: $height) {
-      @content;
-    }
-  }
-}
