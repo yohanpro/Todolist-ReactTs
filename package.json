@@ -16,7 +16,7 @@
     "bootstrap": "^4.5.2",
     "express": "^4.17.1",
     "icomoon-react": "^2.0.16",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
